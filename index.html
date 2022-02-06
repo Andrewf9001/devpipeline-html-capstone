@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hestia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0760cc3b1b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <div class="homepage-nav-container">
-      <div class="nav-container">
+      <div class="homepage-bg-image">
+        <img
+          src="https://wp-themes.com/wp-content/themes/hestia/assets/img/slider1.jpg"
+          alt="Mountains Background"
+        />
+      </div>
+      <div id="navbar" class="nav-container">
         <div class="nav-left-wrapper">
           <a href="./index.html">Hestia</a>
         </div>
@@ -23,7 +43,7 @@
           <div class="nav-link">
             <a href="/pages/page/contact.html">CONTACT</a>
           </div>
-          <div id="more" class="nav-link">
+          <div id="more" class="nav-link-button">
             <button>
               <a href="#standing">MORE</a>
             </button>
@@ -59,7 +79,7 @@
               alt=""
               class="wp-image-70"
             />
-            <div>Responsive</div>
+            <h4>Responsive</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -72,7 +92,7 @@
               alt=""
               class="wp-image-71"
             />
-            <div>Quality</div>
+            <h4>Quality</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -85,43 +105,45 @@
               alt=""
               class="wp-image-72"
             />
-            <div>Support</div>
+            <h4>Support</h4>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="homepage-about-container">
-          <div class="left-wrapper">
-            <h2>About Hestia</h2>
-            <p>
-              Need more details? Please check our full documentation for
-              detailed information on how to use Hestia.
-            </p>
-          </div>
-
-          <div class="right-wrapper">
-            <img
-              src="https://wp-themes.com/wp-content/themes/hestia/assets/img/about-content.png"
-              alt=""
-              class="wp-image-81"
-            />
-          </div>
+      <div class="homepage-about-container">
+        <div class="left-wrapper">
+          <h2>About Hestia</h2>
+          <p>
+            Need more details? Please check our full documentation for detailed
+            information on how to use Hestia.
+          </p>
         </div>
 
-        <div class="homepage-blog-container">
-          <h1>Blog</h1>
+        <div class="right-wrapper">
+          <img
+            src="https://wp-themes.com/wp-content/themes/hestia/assets/img/about-content.png"
+            alt=""
+            class="wp-image-81"
+          />
+        </div>
+      </div>
 
+      <div class="homepage-blog-container">
+        <h1>Blog</h1>
+
+        <div class="blog-layout-wrapper">
           <div class="blog-layout">
-            <div class="blog-boat">UNCATEGORIZED</div>
+            <div class="category purple">UNCATEGORIZED</div>
             <a href="./pages/boat.html">Worth A Thousand Words</a>
             <p>Boat.</p>
           </div>
 
           <div class="blog-layout">
-            <div class="blog-elements">UNCATEGORIZED</div>
+            <div class="category teal">UNCATEGORIZED</div>
             <a href="./pages/elements.html">Elements</a>
             <p>
               The purpose of this HTML is to help determine what default
@@ -132,25 +154,27 @@
           </div>
 
           <div class="blog-layout">
-            <div class="blog-tags">UNCATEGORIZED</div>
+            <div class="category red">UNCATEGORIZED</div>
             <a href="./pages/tags.html">More Tags</a>
             <p>More of these posts need tags.</p>
           </div>
         </div>
+      </div>
 
-        <div class="homepage-contact-info-container">
+      <div class="homepage-contact-info-container">
+        <div class="address-contact-wrapper">
           <h2>Get in Touch</h2>
 
-          <div class="address-wrapper">
-            <i>placeholder-map</i>
+          <div class="info-wrapper">
+            <i class="fas fa-map-marker-alt"></i>
             <div class="address-text-wrapper">
               <div class="address-text">Find us at the office</div>
               <p>Strada Povernei, nr 20, Bucharest, Romania</p>
             </div>
           </div>
 
-          <div class="address-wrapper">
-            <i>placeholder-phone</i>
+          <div class="info-wrapper">
+            <i class="fas fa-mobile-alt"></i>
             <div class="address-text-wrapper">
               <div class="address-text">Give us a ring</div>
               <p>John Doe +40 712 345 678 Mon - Fri, 8:00-22:00</p>
@@ -158,20 +182,20 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-container">
-      <div class="footer-left-wrapper">
-        <div class="footer-link">
-          <a href="./pages/page/about.html">ABOUT</a>
+      <div class="footer-container">
+        <div class="footer-left-wrapper">
+          <div class="footer-link">
+            <a href="./pages/page/about.html">ABOUT</a>
+          </div>
+          <div class="footer-link">
+            <a href="./pages/page/parent-page.html">PARENT PAGE</a>
+          </div>
         </div>
-        <div class="footer-link">
-          <a href="./pages/page/parent-page.html">PARENT PAGE</a>
-        </div>
-      </div>
 
-      <div class="footer-right-wrapper">
-        <p>Hestia | Developed by ThemeIsle</p>
+        <div class="footer-right-wrapper">
+          <p>Hestia | Developed by ThemeIsle</p>
+        </div>
       </div>
     </div>
   </body>
