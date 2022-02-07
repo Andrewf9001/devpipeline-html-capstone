@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hestia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/0760cc3b1b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../styles/main.css" />
   </head>
   <body>
     <div class="nav-container">
@@ -22,22 +36,26 @@
         <div class="nav-link">
           <a href="../page/contact.html">CONTACT</a>
         </div>
-        <div id="more" class="nav-link">
-          <button>MORE</button>
+        <div id="more" class="nav-link-button">
+          <button>
+            <a href="#">MORE</a>
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="category-hero-container">
+    <div class="hero-container">
       <h1>First Child Category</h1>
     </div>
 
-    <div class="webpage-content-container">
-      <div class="category-wrapper">
-        <div class="category green">
-          <a href="#">FIRST CHILD CATEGORY</a>
+    <div class="webpage-content-container first-child-container">
+      <div class="blog-wrapper category-hierarchy first-child-wrapper">
+        <div class="category purple">
+          <a href="../category/first-child.html">FIRST CHILD CATEGORY</a>
         </div>
-        <a href="../blogs/category-hierarchy.html">Category Hierarchy</a>
+        <a class="blog-title-link" href="../blogs/category-hierarchy.html"
+          >Category Hierarchy</a
+        >
         <p>
           This post has 4 categories, part of a hierarchy that is 3 deep. Lorem
           ipsum dolor sit amet, consectetuer adipiscing elit. Fusce euismod
@@ -45,11 +63,12 @@
           a lorem non urna molestie euismod. Fusce
           <a href="../blogs/category-hierarchy.html">Read more...</a>
         </p>
-        <div>By <a href="../users/user.html">Theme Admin</a>, 14 years ago</div>
+        <div class="blog-user">
+          By <a href="../users/user.html">Theme Admin</a>, 14 years ago
+        </div>
       </div>
-    </div>
 
-    <div class="footer-container">
+    <div class="footer-container first-child-footer">
       <div class="footer-left-wrapper">
         <div class="footer-link">
           <a href="../page/about.html">ABOUT</a>
